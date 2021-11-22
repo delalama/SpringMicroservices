@@ -20,11 +20,11 @@
 
 This is the base architecture, now we add some services that serves data and can communicate each other.
 
-Greeting
+- _Greeting_
 
-Time
+- _Time_
 
-Pokemon
+- _Pokemon_
 
 
 # PORTS RESUME
