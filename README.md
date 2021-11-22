@@ -23,8 +23,6 @@ Add register service
 
 
 
-
-
 # PORTS RESUME
 eureka     -> 8761
 
@@ -39,3 +37,17 @@ Greeting   -> 8001
 Time       -> 7001
 
 Pokemon    -> 7002
+
+# BUILD
+![build](https://github.com/delalama/SpringMicroservices/blob/master/images/allServices.png")
+
+
+# once you run all the individual projects you can access to eureka and you see all running services
+![eureka_view](https://github.com/delalama/SpringMicroservices/blob/master/images/eurekaView.png")
+
+# when you navigate to localhost:8001 you will find this answer
+![IMAGE](https://github.com/delalama/SpringMicroservices/blob/master/images/greeting%20service.png")
+This is the result of GreetingService communicating with Time Service and Pokemon service
+
+
+
