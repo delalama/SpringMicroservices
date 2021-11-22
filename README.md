@@ -19,6 +19,7 @@
   JVM based router and server side load balancer by Netflix. And Spring Cloud has a nice integration with an embedded Zuul proxy – which is what we'll use here.
 
 This is the base architecture, now we add some services that serves data and can communicate each other.
+
 Greeting
 
 Time
