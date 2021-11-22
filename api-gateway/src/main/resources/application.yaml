@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: api-gateway
+
+server:
+  port: 8000
+
+ribbon:
+  eureka:
+    enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+  instance:
+    preferIpAddress: true

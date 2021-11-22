@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: config-service
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/birelian/spring-cloud-microservices.git
+          searchPaths: config-service/configs
+
+server:
+  port: 8888
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+---
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+  instance:
+    preferIpAddress: true
