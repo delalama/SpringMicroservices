@@ -46,7 +46,7 @@
 
 	<build>
 
-		<finalName>time-service</finalName>
+		<finalName>pokemon-service</finalName>
 
 		<plugins>
 
