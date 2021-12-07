@@ -1,4 +1,18 @@
 spring:
+  profiles: dev
+  application:
+    name: greeting-service
+
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        serviceId: config-service
+
+---
+
+spring:
+  profiles: prod
   application:
     name: greeting-service
 
