@@ -1,6 +1,8 @@
 spring:
   application:
     name: eureka-service
+  banner:
+    location: "classpath:/banner/bannerDev.txt"
 
 server:
   port: 8761
@@ -20,3 +22,8 @@ management:
     web:
       exposure:
         include: "*,hystrix.stream"
+
+application:
+  version: 1.0
+company:
+  name: IZERTIS

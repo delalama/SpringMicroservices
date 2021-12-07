@@ -2,12 +2,21 @@ spring:
   application:
     name: config-service
 
+
+
   cloud:
     config:
       server:
         git:
           uri: https://github.com/birelian/spring-cloud-microservices.git
           searchPaths: config-service/configs
+  banner:
+    location: "classpath:/banner/bannerDev.txt"
+    charset: UTF-8
+    image.width: 76
+    image.height:
+    image.margin: 2
+main.banner-mode: off
 
 server:
   port: 8888
@@ -27,3 +36,8 @@ eureka:
 
   instance:
     preferIpAddress: true
+
+application:
+  version: 1.0
+company:
+  name: IZERTIS
